@@ -70,9 +70,9 @@ GROUP BY latest_saledate_year;
 	GROUP BY 
 		latest_saledate_year
 ) SELECT Year,
-	FORMAT(Total,'C') Total_Sales, 
-	FORMAT(YOY_Difference,'C') YOY_Difference,
-	FORMAT(100.0*(YOY_Difference/PreviousYear),'N') AS Percentage_Change
+	FORMAT(Total,'C') TotalSales, 
+	FORMAT(YOY_Difference,'C') YOYDifference,
+	FORMAT(100.0*(YOY_Difference/PreviousYear),'N') AS PercentageChange
 FROM cte;
 
 ---- total home sales for all months from 2018 to 2020
