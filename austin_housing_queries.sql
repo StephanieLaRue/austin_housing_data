@@ -100,7 +100,7 @@ SELECT
 FROM cte
 ORDER BY Year;
 
--- avg sale price per month
+-- avg price (monthly)
 SELECT 
 	latest_saledate_year AS Year,
     MONTH(latest_saledate) AS MonthSold,
